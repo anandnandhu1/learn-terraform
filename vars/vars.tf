@@ -20,7 +20,7 @@ variable "lists" {
 }
 
 output "lists" {
-  value = "var.lists[1]"
+  value = var.lists[1]
 }
 
 #maps
@@ -33,5 +33,5 @@ variable "maps" {
 }
 
 output "maps" {
-  value = "var.maps[boolean]"
+  value = var.maps["boolean"]
 }
