@@ -22,3 +22,16 @@ variable "lists" {
 output "lists" {
   value = "var.lists[1]"
 }
+
+#maps
+variable "maps" {
+  default = {
+   number = 55
+    string = 44
+    boolean =false
+  }
+}
+
+output "maps" {
+  value = "var.maps[boolean]"
+}
