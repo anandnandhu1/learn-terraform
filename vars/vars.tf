@@ -39,5 +39,5 @@ output "maps" {
 # variables from inputs
 variable "demo1" {}
 output "demo1" {
-  value = "var.demo1"
+  value = var.demo1
 }
