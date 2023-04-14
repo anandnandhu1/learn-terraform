@@ -35,3 +35,10 @@ variable "maps" {
 output "maps" {
   value = var.maps["boolean"]
 }
+
+# variables from inputs
+variable "demo1" {}
+
+output "demo1" {
+  value = "var.demo1"
+}
