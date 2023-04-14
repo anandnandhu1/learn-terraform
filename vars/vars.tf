@@ -41,3 +41,12 @@ variable "demo1" {}
 output "demo1" {
   value = var.demo1
 }
+
+#vars from shell
+variable "demo2" {
+  default = null
+}
+
+output "demo2" {
+  value = var.demo2
+}
