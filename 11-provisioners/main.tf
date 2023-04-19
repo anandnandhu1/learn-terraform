@@ -15,9 +15,12 @@ resource "aws_instance" "web" {
   tags = {
     Name = "HelloWorld"
   }
+}
+
+resource "null_resource" "provision" {
   provisioner "remote-exec" {
     connection {
-      host     = self.public_ip
+      host     = aws_instance.web.public_ip
       user     = "centos"
       password = "DevOps321"
     }
