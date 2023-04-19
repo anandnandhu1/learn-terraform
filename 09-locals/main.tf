@@ -18,9 +18,9 @@ locals {
 }
 
 output "instance_type" {
-  value = "local.instance_type"
+  value = local.instance_type
 }
 
 output "name" {
-  value = "local.name"
+  value = local.name
 }
